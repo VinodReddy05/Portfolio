@@ -1,0 +1,223 @@
+.cardsContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  background-color: #1F1F1F;
+}
+
+.cardsContainer h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  font-size: 2em;
+  width: auto; 
+  /* margin: 40px 0 20px 0;  */
+}
+
+
+
+.aboutme {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.resumebtn{
+  background-color: unset;
+  cursor: pointer;
+}
+
+.aboutme h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffafbd;
+}
+
+.aboutme p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #ddd;
+  /* margin: 0 10px;  */
+}
+
+.aboutme b {
+  color: #e65d66;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #d33540, #ffafbd);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.download-button:hover {
+  background: linear-gradient(90deg, #ffafbd, #d33540);
+}
+
+.fa-download {
+  margin-right: 8px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  /* margin-top: 20px; */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  padding: 20px;
+  border: 2px solid #ffafbd;
+  border-radius: 10px;
+  background-color: #282828;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ffafbd;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #d33540;
+}
+
+.card p {
+  font-size: 1em;
+  color: #ddd;
+}
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+
+/* Responsive styling adjustments for smaller screens */
+@media (max-width: 768px) {
+  .cardsContainer h1 {
+    font-size: 1.5em;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  
+  .aboutme {
+    padding: 10px;
+  }
+
+  .aboutme p {
+    font-size: 16px;
+    line-height: 15px;
+    color: #ddd;
+  }
+  .aboutme h2 {
+    font-size: 1.8em;
+  }
+
+  .cards {
+    grid-template-columns: 1fr; 
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutme h2 {
+    font-size: 1.5em;
+  }
+
+  .download-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .card h2 {
+    font-size: 1.3em;
+  }
+
+  .card h3 {
+    font-size: 1.1em;
+  }
+
+  .card p {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 390px) {
+  .aboutme h2 {
+    font-size: 25px;
+  }
+
+  .download-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .card h2 {
+    font-size: 1.3em;
+  }
+
+  .card h3 {
+    font-size: 1.1em;
+  }
+
+  .card p {
+    font-size: 0.9em;
+  }
+}

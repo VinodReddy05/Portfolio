@@ -1,0 +1,128 @@
+.mail-container{
+  background-color: #1F1F1F;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+#mail {
+width: 30%;
+    padding: 20px;
+
+    background-color: #535356;
+    border-radius: 8px;
+   
+    font-family: Arial, sans-serif;
+  }
+  
+  #mail h1 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .contactme{
+    color: #fff;
+  }
+  
+  #mail form {
+    display: flex;
+    flex-direction: column;
+    outline: none;
+  }
+  
+  #mail label {
+    margin: 10px 0 5px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #mail input[type="text"],
+  #mail input[type="email"],
+  #mail textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: transparent;
+    border-bottom: 3px solid lightcoral;
+    /* border-radius: 5px; */
+    /* transition: border-color 0.3s ease; */
+    font-size: 16px;
+    /* background-color: #3b3838; */
+  }
+  
+  #mail input[type="text"]:focus,
+  #mail input[type="email"]:focus,
+  #mail textarea:focus {
+    border-bottom: 3px solid #ffafbd;
+    outline: none;
+  }
+  
+  #mail textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  #mail input[type="submit"] {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #4a90e2, #357ab8, #ff5722);  
+    background-size: 300% 300%; /* Make the gradient large for movement */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth text color transition */
+    animation: none; /* No animation by default */
+    overflow: hidden;
+}
+
+/* Define keyframes for rotating background */
+@keyframes rotateBackground {
+    0% {
+        background-position: 0% 50%; /* Start position */
+    }
+    50% {
+        background-position: 100% 50%; /* Midway position */
+    }
+    100% {
+        background-position: 0% 50%; /* End position */
+    }
+}
+
+#mail input[type="submit"]:hover {
+    animation: rotateBackground 2s linear infinite; /* Apply animation on hover */
+}
+
+  #mail input[type="submit"]:active {
+    background-color: #2d5b99;
+    transform: scale(0.98);
+  }
+  
+  #mail input[type="text"]::placeholder,
+  #mail input[type="email"]::placeholder,
+  #mail textarea::placeholder {
+    color: #aaa;
+  }
+
+  
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:500px
+  }
+  
+  
+
+  @media(max-width:427px){
+    #mail {
+      width: 90%;
+    }
+  }

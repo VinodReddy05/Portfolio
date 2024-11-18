@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  scroll-behavior: smooth; 
+  background-image: unset; 
+  scrollbar-width: none;
+}
+
+
+
+
+#about, #skills, #experience, #projects, #mail {
+  scroll-margin-top: 100px;  
+}
+ 
+
+
+h1,h2,h3,h4,h5,h6,p,a,span,li,button{
+  font-family: 'outfit' , sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+button{
+  outline: none;
+  border: none;
+}
+
+
+
+
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #ff4d5a, #ffafbd); 
+  height: 100vh;
+  font-size: 2rem;
+  overflow-x: hidden;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #ff4d5a, #ffafbd); 
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+@media(max-width:789px){
+  .welcome {
+    font-size: 1rem;
+  }
+}
+@media(max-width:389px){
+  .welcome {
+    font-size: 0.8rem;
+  }
+}
