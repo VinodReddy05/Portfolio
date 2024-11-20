@@ -1,45 +1,39 @@
-// import './App.css';
-// import React from 'react';
-// import Home from './Components/Home/Home';
-
-// function App() {
-//   return (
-//     <div>
-      
-//       <Home/>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import Home from './Components/Home/Home';
 import { HashLoader } from 'react-spinners';
+import confetti from 'canvas-confetti';  // Make sure to import confetti
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [showWelcome, setShowWelcome] = useState(true);
 
-  // Handle the 3-second delay before showing the loader
+  // Handle the 3-second delay before showing the loader and confetti
+  confetti({
+    particleCount: 1000,
+    startVelocity: 50,
+    spread: 360,
+    origin: {
+      x: Math.random(),
+      y: Math.random() - 0.2,
+    },
+  });
   useEffect(() => {
     const welcomeTimer = setTimeout(() => {
-      setShowWelcome(false); // Hide the welcome message after 3 seconds
+      // Trigger confetti effect after welcome message
+      setShowWelcome(false); // Hide the welcome message after 2 seconds
     }, 2000);
 
     const loaderTimer = setTimeout(() => {
-      setLoading(false); // After 6 seconds, hide the loader and show the content
-    }, 5000); // 3 seconds for welcome message + 3 seconds for loading
+      setLoading(false); // After 5 seconds, hide the loader and show the content
+    }, 5000); // 2 seconds for welcome message + 3 seconds for loading
 
     // Clean up timers
     return () => {
       clearTimeout(welcomeTimer);
       clearTimeout(loaderTimer);
     };
-  }, []);
+  }, []);  // Empty dependency array ensures this runs only once on page load
 
   return (
     <div>

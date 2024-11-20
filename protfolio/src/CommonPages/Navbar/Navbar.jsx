@@ -27,7 +27,6 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleColor);
 
-    // Detect clicks outside the menu to close it
     const handleOutsideClick = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setClick(false);
