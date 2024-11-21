@@ -9,15 +9,7 @@ function App() {
   const [showWelcome, setShowWelcome] = useState(true);
 
   // Handle the 3-second delay before showing the loader and confetti
-  confetti({
-    particleCount: 1000,
-    startVelocity: 50,
-    spread: 360,
-    origin: {
-      x: Math.random(),
-      y: Math.random() - 0.2,
-    },
-  });
+  
   useEffect(() => {
     const welcomeTimer = setTimeout(() => {
       // Trigger confetti effect after welcome message

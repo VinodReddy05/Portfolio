@@ -41,7 +41,7 @@ const Project = () => {
              },
 
         { src: Book, 
-            link: '/', 
+            link: 'https://vinodreddy05.github.io/Dictionary/', 
             text: 'Look at my project', 
             title: "Dictionary Book",
              concept: "Javascript API fetching (UI)",
@@ -49,7 +49,7 @@ const Project = () => {
              },
 
         { src: tour, 
-            link: '',
+            link: 'https://vinodreddy05.github.io/ViaTours-/',
              text: 'Look at my project', 
              title: "Tours and Travelling",
               concept: "HTML, CSS, DOM",
