@@ -13,7 +13,7 @@ const Cards = () => {
     setTimeout(() => {                               
       setLoading(false);
       const link = document.createElement("a");
-      link.href = "/Resume/VinodReddy_janagam_Resume.pdf";  
+      link.href = "/Resume/VinodReddy_janagam_Resume1.pdf";  
       link.download = "VinodReddy_janagam_Resume.pdf";   
       document.body.appendChild(link);
       link.click();   
