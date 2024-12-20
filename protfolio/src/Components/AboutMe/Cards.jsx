@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "./AboutMe.css";
 import { FaDownload } from "react-icons/fa";
@@ -9,24 +8,23 @@ const Cards = () => {
 
   const handleResumeDownload = () => {
     setLoading(true);
-  
-    setTimeout(() => {                               
+
+    setTimeout(() => {
       setLoading(false);
       const link = document.createElement("a");
-      link.href = "/Resume/VinodReddy_janagam_Resume1.pdf";  
-      // link.download = "VinodReddy_janagam_Resume.pdf";   
+      link.href = "/Resume/VinodReddy_janagam_Resume1.pdf";
+      // link.download = "VinodReddy_janagam_Resume.pdf";
       document.body.appendChild(link);
-      link.click();   
+      link.click();
       document.body.removeChild(link);
-    }, 3000);   
+    }, 3000);
   };
-  
+
   return (
     <div className="cardsContainer">
       {loading && (
         <div className="loader-overlay">
           <RotateLoader color="#ff4d5a" size={15} />
-       
         </div>
       )}
       <h1>ABOUT ME</h1>
@@ -39,16 +37,17 @@ const Cards = () => {
       >
         <h2 className="aboutme-inner-bold">
           <span>Vinod Reddy Janagam</span> <br />
-          <span>Front-End Developer</span>
+          <span>Full-Stack Web Developer</span>
         </h2>
         <p>
-          A <b>Front-End Developer</b> creates the visual elements of websites
-          and applications using <b>HTML, CSS, and JavaScript.</b> They ensure
-          that designs are <b>responsive and user-friendly</b> while optimizing
-          performance. Collaborating with designers, they{" "}
-          <b>bring ideas to life with modern frameworks like React.</b> Always
-          eager to learn, they stay updated with the latest web technologies
-          and trends.
+          A <b>Full-Stack Web Developer</b> creates both the front-end and
+          back-end of websites and applications. They work with technologies
+          like <b>HTML, CSS, JavaScript, and modern frameworks like React</b> to
+          build responsive, user-friendly designs. On the back-end, they manage
+          server-side logic using languages such as{" "}
+          <b>Node.js, Express, and databases like MongoDB</b>. They ensure
+          seamless performance and scalability, collaborating with designers to{" "}
+          <b>bring ideas to life</b> and optimize user experience.
         </p>
         <div className="download-button" onClick={handleResumeDownload}>
           <FaDownload className="fa-download" style={{ marginRight: "8px" }} />

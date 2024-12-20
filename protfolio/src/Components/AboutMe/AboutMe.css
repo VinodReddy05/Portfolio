@@ -52,10 +52,10 @@
 }
 
 .aboutme p {
+  width: 820px;
   font-size: 1.1em;
   line-height: 1.5;
   color: #ddd;
-  /* margin: 0 10px;  */
 }
 
 .aboutme b {

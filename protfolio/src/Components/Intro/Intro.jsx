@@ -14,7 +14,7 @@ const Intro = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["VINODREDDY JANAGAM", "Frontend Web Developer"],
+      strings: ["VINODREDDY JANAGAM", "Full-Stack Web Developer"],
       typeSpeed: 50,
       backSpeed: 50,
       backDelay: 1000,
@@ -78,7 +78,7 @@ const Intro = () => {
               ></span>
             </span>
             <span>
-              Frontend Developer with a high level of experience in web
+            Full-Stack Web Developer with a high level of experience in web
               designing and development, producing quality work.
             </span>
           </div>
