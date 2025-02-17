@@ -17,7 +17,7 @@ import trek from "../../assets/trekingImg.svg";
 const Project = () => {
     const projects = [
         { src: Hotel,
-             link: 'https://travelbookinghotel.web.app/', 
+             link: 'https://travel-tour-5f097.web.app//', 
              text: 'Look at my project', 
              title: "HotelBooking", 
              concept: "React Redux" ,
