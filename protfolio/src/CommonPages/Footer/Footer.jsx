@@ -28,8 +28,13 @@ const Footer = () => {
               <FaInstagram   style={{ fontSize: '36px' }}/>
             </a>
           </div>
+          
         </div>
+ <div className='copyright'>© 2025 Vinod Reddy. All rights reserved.
+</div>
       </section>
+             
+
     </div>
   );
 };

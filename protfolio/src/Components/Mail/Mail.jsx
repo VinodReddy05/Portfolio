@@ -73,6 +73,7 @@ const Mail = () => {
           </form>
         )}
       </div>
+
     </div>
   );
 };

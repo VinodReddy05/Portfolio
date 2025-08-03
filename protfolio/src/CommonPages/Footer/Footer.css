@@ -106,6 +106,12 @@ input[type="email"]:focus {
     transform: scale(1.2);  
 }
 
+.copyright{
+    /* color:#4DAAF5; */
+    color:#888888  ;
+    padding-top: 50px;
+}
+
 
 @media(max-width:1024px){
     .footer-mailBox{
