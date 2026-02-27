@@ -13,7 +13,7 @@ const Cards = () => {
       setLoading(false);
       const link = document.createElement("a");
       // link.href = "/Resume/VinodReddy_janagam_Resume1.pdf";
-      link.herf ="/Resume/vinod_janagam_resume_01.pdf"
+      link.href ="/Resume/vinod_janagam_resume_01.pdf"
       // link.download = "VinodReddy_janagam_Resume.pdf";
       document.body.appendChild(link);
       link.click();
